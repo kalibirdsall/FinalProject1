@@ -14,6 +14,7 @@ color: #49aac5; teal blue
 color: #9ccf57; light green
 color: #f1f1f1; light grey
 color: #686867; dark grey
+color: #ecf9d9; light green background
 */
 
 
@@ -144,7 +145,7 @@ img {
 
 .containerheader nav {
     display: flex;
-    gap: 60px;/*spacing of nav menu*/
+    gap: 60px; /*spacing of nav menu*/
 }
 
 .intro-flex {
@@ -210,8 +211,8 @@ img {
     color: white;
 }
 
-.hero-text p {
-    max-width: 600px;
+.hero-text h3 {
+    max-width: 45%;
 }
 
 #apisection { 
@@ -245,7 +246,7 @@ img {
     padding-bottom: 200px;
 }
 
-/* Grid for cards - can add more cards as needed later on another row below*/
+/* Grid for home page cards - can add more cards as needed later on another row below*/
 #section1 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -262,7 +263,7 @@ img {
 }
 
 #resourcessection p {
-    max-width: 65%;
+    max-width: 85%;
 }
 
 #readinggamessection { /* Home page */
@@ -274,7 +275,7 @@ img {
 }
 
 #readinggamessection p {
-    max-width: 65%;
+    max-width: 85%;
 }
 
 
@@ -306,6 +307,68 @@ flex: 1;
     margin-top: 0;
 }
 
+#about1 { /* Home page */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about1 p {
+    max-width: 85%;
+}
+
+#textsection1 { /* white background */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#textsection1 p {
+    max-width: 85%;
+}
+
+#textsection2 { /* lt green background */
+    background-color: #ecf9d9;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#textsection2 p {
+    max-width: 85%;
+}
+
+#textsectionNOspace { /* white background */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+#textsectionNOspace p {
+    max-width: 85%;
+}
+
+/* Grid for about page cards - can add more cards as needed later on another row below*/
+#teamcards .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+    margin-top: 0px;
+}
+
+#teamcards {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+}
 
 /* ============================================
    COMPONENTS
