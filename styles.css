@@ -1,0 +1,387 @@
+/* ============================================
+   CSS styles for Final Project 
+   Phonics Link Website 
+   Kali Birdsall & Anika Majumder
+   ============================================ */
+
+/* ============================================
+   COLOR PALETTE
+   ============================================ 
+
+color: black; 
+color: white; 
+color: #49aac5; teal blue
+color: #9ccf57; light green
+color: #f1f1f1; light grey
+color: #686867; dark grey
+*/
+
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+    font-size: 16px; 
+    font-family: "poppins", sans-serif;
+    margin: 0;
+}
+
+/*Poppins font from google*/
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
+
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1 {
+    font-size: 5em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 3.3em;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+a {
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+
+/* ============================================
+   LINK STATES
+   ============================================ */
+
+/*link states for top nav bar (light color background)*/
+a.link-nav {
+    color: black;
+    text-decoration: none;
+}
+
+a.link-nav:visited {
+    color: black;
+}
+
+a.link-nav:hover {
+    color: #49aac5
+}
+
+
+/* ============================================
+   IMAGES
+   ============================================ */
+
+/*Responsive image style from class slides */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Image styling so image fits nicely next to text*/
+.img-about {
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.img-hero {
+    width: auto;
+    height: 700px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.img-resources {
+    width: auto;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* ============================================
+   LAYOUT CONTAINERS
+   ============================================ */
+
+.container {
+    padding-left: 13%;
+    padding-right: 13%;
+    box-sizing: border-box;
+}
+
+.containerheader {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: lightgrey 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerheader nav {
+    display: flex;
+    gap: 60px;/*spacing of nav menu*/
+}
+
+.intro-flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
+
+/* Header Styling */
+#header {
+    width: 100%;
+    height: auto;
+    background: white;
+    color: black;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+}
+
+
+/* ============================================
+   HOME PAGE SECTIONS
+   ============================================ */
+
+/* Hero section - Home page */
+#herosection {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero-background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text p {
+    max-width: 600px;
+}
+
+#apisection { 
+    background-color: #ccf5ff;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#apisection p {
+    max-width: 65%;
+}
+
+#blogsection { /* title only */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+#blogsection p {
+    max-width: 65%;
+}
+
+#section1 {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+}
+
+/* Grid for cards - can add more cards as needed later on another row below*/
+#section1 .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+    margin-top: 50px;
+}
+
+#resourcessection { /* Home page */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+#resourcessection p {
+    max-width: 65%;
+}
+
+#readinggamessection { /* Home page */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#readinggamessection p {
+    max-width: 65%;
+}
+
+
+/* ============================================
+   ABOUT PAGE SECTIONS
+   ============================================ */
+
+/* About page */
+#aboutintrosection { 
+    background-color: #ceeaf4;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.img-about {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.about-text {
+flex: 1;
+}
+
+.about-text h1 {
+    margin-top: 0;
+}
+
+
+/* ============================================
+   COMPONENTS
+   ============================================ */
+
+.card {
+    background-color: #f0f0f0;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card p {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all-link {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.view-all-link:hover {
+    color: #49aac5;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+#footer {
+    width: 100%;
+    clear: left;
+    background: #f1f1f1;
+    color: black;
+    border-top: lightgrey 1px solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* small text for footer only */
+.footersmall-text {
+    font-size: 0.8em;
+    color: black;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
