@@ -1,8 +1,6 @@
-/* ============================================
-   CSS styles for Final Project 
+/* CSS styles for Final Project 
    Phonics Link Website 
-   Kali Birdsall & Anika Majumder
-   ============================================ */
+   Kali Birdsall & Anika Majumder*/
 
 /* ============================================
    COLOR PALETTE
@@ -97,20 +95,6 @@ a.link-nav:hover {
 img {
     max-width: 100%;
     height: auto;
-}
-
-/*Image styling so image fits nicely next to text*/
-.img-about {
-    width: 35%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.img-hero {
-    width: auto;
-    height: 700px;
-    border-radius: 0;
-    object-fit: cover;
 }
 
 .img-resources {
@@ -212,7 +196,8 @@ img {
 }
 
 .hero-text h3 {
-    max-width: 45%;
+    width: 45%;
+    display: block;
 }
 
 #apisection { 
@@ -283,22 +268,6 @@ img {
    ABOUT PAGE SECTIONS
    ============================================ */
 
-/* About page */
-#aboutintrosection { 
-    background-color: #ceeaf4;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.img-about {
-    width: 700px;
-    height: auto;
-    border-radius: 15px;
-    flex-shrink: 0;
-}
-
 .about-text {
 flex: 1;
 }
@@ -319,30 +288,6 @@ flex: 1;
     max-width: 85%;
 }
 
-#textsection1 { /* white background */
-    background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-#textsection1 p {
-    max-width: 85%;
-}
-
-#textsection2 { /* lt green background */
-    background-color: #ecf9d9;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-#textsection2 p {
-    max-width: 85%;
-}
-
 #textsectionNOspace { /* white background */
     background-color: white;
     width: 100%;
@@ -352,6 +297,18 @@ flex: 1;
 }
 
 #textsectionNOspace p {
+    max-width: 85%;
+}
+
+#textsectionWITHspace { /* white background */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+#textsectionWITHspace p {
     max-width: 85%;
 }
 
@@ -367,6 +324,40 @@ flex: 1;
     background-color: white;
     width: 100%;
     box-sizing: border-box;
+    padding-bottom: 200px;
+}
+/* ============================================
+   RESOURCES PAGE SECTIONS
+   ============================================ */
+
+
+/* ============================================
+   GAMES PAGE SECTIONS
+   ============================================ */
+
+
+/* ============================================
+   CURRENT EVENTS PAGE SECTIONS
+   ============================================ */
+
+#textsectionWITHspaceTOPBOTTOM { /* white background */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#textsectionWITHspaceTOPBOTTOM p {
+    max-width: 85%;
+}
+
+/* Grid for home page cards - can add more cards as needed later on another row below*/
+#blog .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+    margin-top: 50px;
     padding-bottom: 200px;
 }
 
@@ -414,6 +405,23 @@ flex: 1;
 
 .view-all-link:hover {
     color: #49aac5;
+}
+
+.button {
+    display: inline-block;
+    background-color: #49aac5;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3a8ca3;
 }
 
 /* ============================================
