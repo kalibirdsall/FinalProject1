@@ -1,6 +1,8 @@
-/* CSS styles for Final Project 
+/* ============================================
+   CSS styles for Final Project 
    Phonics Link Website 
-   Kali Birdsall & Anika Majumder*/
+   Kali Birdsall & Anika Majumder
+   ============================================ */
 
 /* ============================================
    COLOR PALETTE
@@ -195,10 +197,6 @@ img {
     color: white;
 }
 
-.hero-text h3 {
-    width: 45%;
-    display: block;
-}
 
 #apisection { 
     background-color: #ccf5ff;
