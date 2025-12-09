@@ -379,6 +379,10 @@ a.link-nav:hover {
     padding-bottom: 50px;
 }
 
+#games-pic {
+    border-radius: 15px;
+}
+
 
 /* ============================================
    SHARED COMPONENTS
