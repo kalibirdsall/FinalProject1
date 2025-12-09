@@ -16,7 +16,7 @@
       <div class="containerheader">
 
          <a href="index.html">
-            <img src="images/LogoBlack.png" alt="KB logo" class="header-logo">
+            <img src="images/LogoGradient.png" alt="Phonics Link logo" class="header-logo">
          </a>
 
          <nav>
@@ -31,7 +31,7 @@
 
    <!-- Hero Section --> 
    <div id="herosection">
-      <img src="images/bookshelf.jpg" alt="Kids books on the shelf in a library" class="hero-background-img">
+      <img src="images/bookshelf.jpg" alt="Library book shelf of kids books" class="hero-background-img">
       <div class="hero-overlay">
          <div class="container">
             <div class="hero-text">
@@ -41,14 +41,34 @@
       </div>
    </div>
 
-   <!-- Games Section --> 
+<!-- Games Section --> 
    <div id="resourcessection">
       <div class="container">
          <div class="intro-flex">
-            <img src="images/readgame.jpg" alt="Little girl reading a book" class="img-resources">
             <div class="about-text">
                <h2>Interactive Game</h2>
-               <p>Try out this interactive game that helps your child identify individual letters. The first step toward reading!</p>
+               <p>Try out this interactive game that helps your child learn to identify the first letter of a word. The first step toward reading!</p>
+            </div>
+            <img src="images/alphabet.jpg" alt="Alphabet letters scattered on white surface" class="img-resources">
+         </div>
+      </div>
+   </div>
+
+   <div id="game-section">
+      <div class="container">
+         <div class="game-container">
+            <div class="game-flex">
+               <div class="game-text">
+                  <h3>Can You Guess The First Letter?</h3>
+                  <br>
+                  <img id="games-pic" src="" alt="picture" width="250">
+                  <br>
+                  <input type="text" id="answer" maxlength="1" placeholder="Type first letter">
+                  <button id="check-btn">Check</button>
+                  <button id="next-btn">Next</button>
+                  <p id="feedback"></p>
+               </div>
+               
             </div>
          </div>
       </div>
@@ -58,7 +78,7 @@
    <div id="footer">
       <div class="container">
          <a href="index.html">
-            <img src="images/LogoBlack.png" alt="Phonics Link Logo" class="footer-logo">
+            <img src="images/LogoGradient.png" alt="Phonics Link Logo" class="footer-logo">
          </a>
          <br><br>
       
@@ -69,4 +89,6 @@
    </div>
 
 </body>
+<script src="game.js"></script>
+
 </html>

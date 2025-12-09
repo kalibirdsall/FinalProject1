@@ -15,6 +15,7 @@ color: #9ccf57; light green
 color: #f1f1f1; light grey
 color: #686867; dark grey
 color: #ecf9d9; light green background
+color: #ccf5ff; light blue background
 */
 
 
@@ -28,9 +29,11 @@ body {
     margin: 0;
 }
 
-/*Poppins font from google*/
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
-
+/* Responsive image style from Rik's slide*/
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* ============================================
    TYPOGRAPHY
@@ -74,7 +77,7 @@ a {
    LINK STATES
    ============================================ */
 
-/*link states for top nav bar (light color background)*/
+/* Navigation links */
 a.link-nav {
     color: black;
     text-decoration: none;
@@ -85,26 +88,21 @@ a.link-nav:visited {
 }
 
 a.link-nav:hover {
-    color: #49aac5
+    color: #49aac5;
 }
 
-
-/* ============================================
-   IMAGES
-   ============================================ */
-
-/*Responsive image style from class slides */
-img {
-    max-width: 100%;
-    height: auto;
+/* View all link, home page*/
+.view-all-link {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
 }
 
-.img-resources {
-    width: auto;
-    height: 400px;
-    border-radius: 15px;
-    object-fit: cover;
+.view-all-link:hover {
+    color: #49aac5;
 }
+
 
 /* ============================================
    LAYOUT CONTAINERS
@@ -131,7 +129,7 @@ img {
 
 .containerheader nav {
     display: flex;
-    gap: 60px; /*spacing of nav menu*/
+    gap: 60px;
 }
 
 .intro-flex {
@@ -145,7 +143,6 @@ img {
    HEADER & NAVIGATION
    ============================================ */
 
-/* Header Styling */
 #header {
     width: 100%;
     height: auto;
@@ -161,10 +158,9 @@ img {
 
 
 /* ============================================
-   HOME PAGE SECTIONS
+   HERO SECTION (ALL PAGES)
    ============================================ */
 
-/* Hero section - Home page */
 #herosection {
     position: relative;
     width: 100%;
@@ -198,6 +194,37 @@ img {
 }
 
 
+/* ============================================
+   HOME PAGE SECTIONS
+   ============================================ */
+
+/* Resources section */
+#resourcessection {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+#resourcessection p {
+    max-width: 85%;
+}
+
+/* Reading game section */
+#readinggamessection {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#readinggamessection p {
+    max-width: 85%;
+}
+
+/* API Word of the Day section */
 #apisection { 
     background-color: #ccf5ff;
     width: 100%;
@@ -210,7 +237,22 @@ img {
     max-width: 65%;
 }
 
-#blogsection { /* title only */
+.wordOfTheDay-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#word {
+    color: #9ccf57;
+    font-weight: bold;
+}
+
+/* Current Events section (home page) */
+#blogsection {
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -229,36 +271,11 @@ img {
     padding-bottom: 200px;
 }
 
-/* Grid for home page cards - can add more cards as needed later on another row below*/
 #section1 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 75px;
+    gap: 50px;
     margin-top: 50px;
-}
-
-#resourcessection { /* Home page */
-    background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 0px;
-}
-
-#resourcessection p {
-    max-width: 85%;
-}
-
-#readinggamessection { /* Home page */
-    background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-#readinggamessection p {
-    max-width: 85%;
 }
 
 
@@ -267,14 +284,14 @@ img {
    ============================================ */
 
 .about-text {
-flex: 1;
+    flex: 1;
 }
 
 .about-text h1 {
     margin-top: 0;
 }
 
-#about1 { /* Home page */
+#about1 {
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -286,7 +303,7 @@ flex: 1;
     max-width: 85%;
 }
 
-#textsectionNOspace { /* white background */
+#textsectionNOspace {
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -298,7 +315,26 @@ flex: 1;
     max-width: 85%;
 }
 
-#textsectionWITHspace { /* white background */
+#teamcards {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+}
+
+#teamcards .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 0px;
+}
+
+
+/* ============================================
+   BLOG/CURRENT EVENTS PAGE SECTIONS
+   ============================================ */
+
+#textsectionWITHspace {
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -310,35 +346,7 @@ flex: 1;
     max-width: 85%;
 }
 
-/* Grid for about page cards - can add more cards as needed later on another row below*/
-#teamcards .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 75px;
-    margin-top: 0px;
-}
-
-#teamcards {
-    background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-    padding-bottom: 200px;
-}
-/* ============================================
-   RESOURCES PAGE SECTIONS
-   ============================================ */
-
-
-/* ============================================
-   GAMES PAGE SECTIONS
-   ============================================ */
-
-
-/* ============================================
-   CURRENT EVENTS PAGE SECTIONS
-   ============================================ */
-
-#textsectionWITHspaceTOPBOTTOM { /* white background */
+#textsectionWITHspaceTOPBOTTOM {
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -350,29 +358,69 @@ flex: 1;
     max-width: 85%;
 }
 
-/* Grid for home page cards - can add more cards as needed later on another row below*/
 #blog .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 75px;
+    gap: 50px;
     margin-top: 50px;
     padding-bottom: 200px;
 }
 
+
+
 /* ============================================
-   COMPONENTS
+   GAMES PAGE SECTIONS
    ============================================ */
 
+#game-section {
+    margin-top: 80px;
+    background-color: #ccf5ff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* ============================================
+   SHARED COMPONENTS
+   ============================================ */
+
+/* Resource images */
+.img-resources {
+    width: auto;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Cards */
 .card {
     background-color: #f0f0f0;
     height: auto;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .card p {
     padding: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card-source {
+    font-size: 0.75em;
+    color: #686867;
+    font-weight: normal;
+}
+
+.card-title {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.card-date {
+    font-style: italic;
+    font-size: 0.75em;
+    color: #686867;
 }
 
 .card a {
@@ -387,24 +435,14 @@ flex: 1;
     height: auto;
 }
 
-
+/* Section headers */
 .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.view-all-link {
-    font-size: 1.1em;
-    font-weight: 400;
-    color: black;
-    text-decoration: none;
-}
-
-.view-all-link:hover {
-    color: #49aac5;
-}
-
+/* Buttons */
 .button {
     display: inline-block;
     background-color: #49aac5;
@@ -421,6 +459,7 @@ flex: 1;
 .button:hover {
     background-color: #3a8ca3;
 }
+
 
 /* ============================================
    FOOTER
@@ -442,7 +481,6 @@ flex: 1;
     box-sizing: border-box;
 }
 
-/* small text for footer only */
 .footersmall-text {
     font-size: 0.8em;
     color: black;
