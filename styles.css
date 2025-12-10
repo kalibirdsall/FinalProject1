@@ -256,6 +256,10 @@ a.link-nav:hover {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Current Events section (home page) */
 #blogsection {
     background-color: white;
