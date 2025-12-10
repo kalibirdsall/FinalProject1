@@ -530,9 +530,3 @@ a.link-nav:hover {
     color: black;
     margin: 0;
 }
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
